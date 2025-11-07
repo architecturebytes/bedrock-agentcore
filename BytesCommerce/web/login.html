@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Bytes Commerce</title>
+  <script src="auth.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      text-align: center;
+      padding-top: 20vh;
+    }
+    h1 {
+      font-size: 3em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .login-button {
+      background-color: #483D8B;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 15px 30px;
+      cursor: pointer;
+      font-size: 1em;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    .login-button:hover {
+      background-color: #3A316F;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Bytes Commerce</h1>
+    <p>Please log in to continue.</p>
+    <button class="login-button" onclick="signIn()">Login</button>
+  </div>
+
+  <script>
+    // If the user is already logged in, redirect them to the chat page
+    if (isLoggedIn()) {
+      window.location.assign('/index.html');
+    }
+  </script>
+</body>
+</html>
