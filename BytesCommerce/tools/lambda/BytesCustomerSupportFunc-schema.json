@@ -1,0 +1,32 @@
+[
+  {
+    "description": "Get order details for a given order ID",
+    "inputSchema": {
+      "properties": {
+        "order_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "order_id"
+      ],
+      "type": "object"
+    },
+    "name": "get_order_details"
+  },
+  {
+    "description": "Get product details for a given product ID",
+    "inputSchema": {
+      "properties": {
+        "product_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "product_id"
+      ],
+      "type": "object"
+    },
+    "name": "get_product_details"
+  }
+]
